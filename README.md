@@ -21,7 +21,6 @@ them as axioms.
 As already mentioned above, distance plays a fundamental role in the
 definition of convergence. Let us recall that definition from calculus:
 
-::: definition
 **Definition 1**. Let $(x_n)_n$ be a sequence of real numbers and
 $x\in \mathbb R$. Then $(x_n)_n$ **converges to $x$**, if for every
 $\varepsilon>0$ there exists an $N\in \mathbb{N}$ such that
@@ -35,7 +34,6 @@ $N$) less than the error tolerance.
 Our first goal is to formalise the concept of *distance*. This is the
 content of the following definition:
 
-::: definition
 **Definition 2**. Let $X$ be a non-empty set. A **metric** (or distance
 function) on $X$ is a function
 $$d \colon X \times X \to \mathbb R, \ (x,y)\mapsto d(x,y)$$ satisfying
@@ -71,7 +69,6 @@ Let us record a few remarks on the axioms in the definition above:
 
 Let us now consider some examples:
 
-::: example
 **Example 3** (Euclidean space). The first example is the
 $n$-dimensional **Euclidean space** $(\mathbb R^n, d_2)$ where for two
 points $x=(x_1,\ldots, x_n)$ and $y=(y_1,\ldots, y_n)$ in $\mathbb R^n$
@@ -97,7 +94,6 @@ which is known to hold for all $n$-tuples of real numbers
 $(r_1,\ldots, r_n)$ and $(s_1,\ldots, s_n)$.
 :::
 
-::: example
 **Example 4**. Besides the Euclidean distance $d_2$ discussed above,
 there are many other choices of metric we can put on the $n$-dimensional
 real vector space $\mathbb R^n$. Let us give two more such examples: for
@@ -110,15 +106,14 @@ the distance coordinate-wise and then returns the maximal value:
 $$d_\infty(x,y)=\max\{\vert x_i-y_i\vert\mid 1\leq i\leq n\}.$$
 :::
 
-::: example
 **Example 5**. Let $X=\mathbb C^n$. Then we can define a metric on $X$
 by setting $$d(z,w)=\sqrt{\sum_{i=1}^n \vert z_i-w_i\vert^2}$$ When we
 express each entry of the complex tuple in terms of its real and
 imaginary parts, the triangle inequality for $\mathbb C^n$ coincides
 with the one for $(\mathbb R^{2n},d_2)$ discussed above.
-:::
 
-::: example
+
+
 **Example 6** (Discrete metric). On any set $X \neq\emptyset$ the
 function $$d(x,y) =
 \begin{cases}
@@ -130,38 +125,38 @@ applications in analysis. They serve as a warning to check by rigorous
 proofs that results suggested by intuition really hold in general metric
 spaces. In other words, they are potential counterexamples; they explore
 the boundaries of the concept of a metric space.
-:::
 
-::: example
+
+
 **Example 7**. On the complex plane $\mathbb{C}$ the **French Railway
 metric** is given as $$d_{f}(z_{1},z_{2})=\begin{cases}
     0 & \hbox{if } z_{1}=z_{2},\\
 |z_{1}|+|z_{2}| & \hbox{if } z_{1}\neq z_{2}
 \end{cases}$$ is a metric (folklore suggests that the shortest rail
 journey between any two French towns is via Paris).
-:::
 
-::: example
+
+
 **Example 8** (Metric Subspaces). If $(X,d)$ is a metric space and
 $Y\subseteq X$ is a subset of $X$, then we can define the **induced
 metric** $d_Y$ on $Y$ as the restriction of $d$ to
 $Y\times Y\subseteq X\times X$, i.e. $d_Y(x,y)=d(x,y)$ for all
 $x,y\in Y$.
-:::
+
 
 If these were the only examples of metric spaces it is doubtful whether
 general metric space theory would be worthwhile. The examples below
 indicate the wide range of metric space theory (but do not exhaust it).
 
-::: example
+
 **Example 9**. The following metric plays an important role in number
 theory. Let $p$ be a fixed prime number. Define a metric
 $$d_p:\mathbb Z\times \mathbb Z\to \mathbb R$$ by setting $d(m,m)=0$ and
 for $n\neq m$ set $d(m,n)=1/r$ where $p^{r-1}$ is the highest power of
 $p$ which divides $m-n$.
-:::
 
-::: example
+
+
 **Example 10** (The word metric on a finitely generated group). This
 example will only make sense if you know about groups and generating
 sets. Suppose $G$ is a finitely generated group and $S$ is a generating
@@ -170,17 +165,13 @@ $g=g_1\cdots g_n$ of elements in $S$ (and their inverses). The shortest
 way to write $g$ in this way is called the length of $g$, denoted by
 $l(g)$. Now we can define the word-metric on $G$ by setting
 $d(g,h)=l(g^{-1}h).$
-:::
 
-::: example
 **Example 11** (Geodesic distance on a graph). Let $(V,E)$ be a
 connected graph (undirected, without multiple edges between vertices),
 with vertex set $V$ and edge set $E$. Then we can define a metric on $V$
 by letting $d(v,w)$ be the length of the shortest path between the two
 vertices $v$ and $w$. This metric is important in the study of networks.
-:::
 
-::: example
 **Example 12** (Hamming distance). Let $\Sigma=\{a,b,c,\ldots, z\}$ be
 the modern Latin alphabet. Let $X$ be the set of all strings of letters
 in $\Sigma$ of length 4 (e.g. $abcd$ is an element in $X$, so are $math$
@@ -190,14 +181,13 @@ different. In other words, it measures the minimum number of
 substitutions required to change one string into the other. One can
 check that $d_H$ is indeed a metric on $X$. A major application of the
 Hamming distance is in coding theory.
-:::
 
 Let us now also introduce a couple of the *function spaces* that
 motivated Fréchet to study metric spaces in the first place. These will
 be studied in much more detail in Linear Analysis, so we keep our
 discussion here brief.
 
-::: example
+
 **Example 13** (Uniform metric). Let $A\neq \emptyset$ be a set. A
 function $f:A\rightarrow \mathbb R$ is called **bounded**, if there
 exists a constant $C>0$ such that $\vert f(a)\vert\leq C$ for all
@@ -205,18 +195,17 @@ $a\in A$. Let $\ell^\infty (A)$ denote the set of all such bounded,
 complex valued functions on $A$. Then for $f,g\in \ell^\infty(A)$ we can
 define $$d_\infty(f,g) := \sup_{a\in A} \vert f(a)-g(a)\vert.$$ We leave
 it as an exercise to show that this is indeed a metric.
-:::
 
-::: example
+
 **Example 14** ($L^1$ metric). Let $C[a,b]$ denote the set of all
 continuous functions $f:[a,b]\to \mathbb R$. Then we can define a metric
 $d_1$ on $C[a,b]$ by setting
 $$d_1(f,g):=\int_a^b \vert f(x)-g(x)\vert \ \mathrm d x.$$
-:::
 
-::: example
+
+
 **Example 15** ($L^2$ metric). Let $C[a,b]$ denote the set of all
 continuous functions $f:[a,b]\to \mathbb R$. Then we can define a metric
 $d_2$ on $C[a,b]$ by setting
 $$d_2(f,g):=\left( \int_a^b (f(x)-g(x))^2 \ \mathrm d x\right)^\frac{1}{2}.$$
-:::
+
