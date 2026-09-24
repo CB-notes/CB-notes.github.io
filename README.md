@@ -1,3 +1,17 @@
+<!-- HTML script to load MathJax engine on the live GitHub Pages website -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
 Metric spaces were introduced by Fréchet in his PhD dissertation in 1906. The mathematicians of that time were studying various spaces
 (mainly spaces of functions) and they had various notions of
 *convergence* in such spaces. For each space its own notion of
