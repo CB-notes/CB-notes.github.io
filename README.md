@@ -11,6 +11,7 @@
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 
+***Week 1***
 
 Metric spaces were introduced by Fréchet in his PhD dissertation in 1906. The mathematicians of that time were studying various spaces
 (mainly spaces of functions) and they had various notions of
