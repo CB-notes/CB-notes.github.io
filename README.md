@@ -38,7 +38,6 @@ definition of convergence. Let us recall that definition from calculus:
 $x\in \mathbb R$. Then $(x_n)_n$ **converges to $x$**, if for every
 $\varepsilon>0$ there exists an $N\in \mathbb{N}$ such that
 $\vert x-x_n\vert<\varepsilon$ for all $n\geq N$.
-:::
 
 In other words: for every error tolerance (the $\varepsilon$) the
 *distance* between $x_n$ and $x$ is eventually (i.e. past the the index
@@ -59,7 +58,6 @@ the following three properties:
 3.  $d(x,y) \leq d(x,z) + d(z,y)$ for all $x,y,z \in X$.
 
 The pair $(X,d)$ is called a **metric space**.
-:::
 
 Let us record a few remarks on the axioms in the definition above:
 
@@ -117,7 +115,6 @@ $$d_1(x,y) := \sum_{i=1}^n \vert x_i-y_i\vert.$$
 Another metric is the **maximum metric** $d_\infty$, which just measures
 the distance coordinate-wise and then returns the maximal value:
 $$d_\infty(x,y)=\max\{\vert x_i-y_i\vert\mid 1\leq i\leq n\}.$$
-:::
 
 **Example 5**. Let $X=\mathbb C^n$. Then we can define a metric on $X$
 by setting $$d(z,w)=\sqrt{\sum_{i=1}^n \vert z_i-w_i\vert^2}$$ When we
