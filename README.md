@@ -1,5 +1,4 @@
-Metric spaces were introduced by Fréchet in his PhD dissertation in
-1906. The mathematicians of that time were studying various spaces
+Metric spaces were introduced by Fréchet in his PhD dissertation in 1906. The mathematicians of that time were studying various spaces
 (mainly spaces of functions) and they had various notions of
 *convergence* in such spaces. For each space its own notion of
 convergence was introduced, and studied. Of course, similarities were
@@ -15,7 +14,7 @@ notions of distance are very important since they occur all the time in
 mathematics, statistics and physics. Many geometric objects rely on a
 notion of distance (e.g. the unit sphere in $\mathbb R^n$ is exactly the
 set of points at distance $1$ from the origin). So, it is natural to
-distill some common properties of distances in various contexts and set
+distil some common properties of distances in various contexts and set
 them as axioms.
 
 As already mentioned above, distance plays a fundamental role in the
